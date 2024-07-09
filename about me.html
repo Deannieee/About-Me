@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "about me.css"> <!--CSS File-->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> <!--Poppins font-->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'> <!--Raleway font-->
+</head>
+
+<body>
+    <header><h1 id = "head">ABOUT ME: WEBSITE</h1></header>
+    <!--mas maganda kung may sidebar na lang sha-->
+    <nav>
+        || <a href = "#aboutMe">About Me</a>   ||
+          <a href = "#myContact">Contact</a>   ||
+          <a href = "#portfolio">Portfolio</a> ||
+    </nav>
+
+    <section id = "aboutMe">
+        <h2>About Me</h2>
+        <div class="column">
+            <p>
+                Hi, <strong>I'm Sophia Deanne M. Robles</strong>, a third-year student pursuing a <b><em>Bachelor of Science in Information Technology</em></b> at <b><i>Bulacan State University Main Campus</i></b>.
+                In two years, I learned several skills in the following fields: <br>
+                <ul>
+                    <li>Database Management in SQL.</li>
+                    <li>Programming Languages (Java and C++). </li>
+                    <li>UI/UX Designing.</li>
+                    <li>Animation</li>
+                    <li>Network Architecture</li>
+                </ul>
+            </p>
+        </div>
+        <button class = "viewButton" onclick = "showPhoto()">VIEW PHOTO</button> <br> <br>
+
+        <!--Show Photo Event-->
+        <div class = "column">
+            <img id = "myPhoto" onclick = "showPhoto()" src = "sensitive content.jpg" alt = "an image showing a sensitive content"></img>
+            
+        </div>
+        
+    </section>
+
+    <br> <br> <br> 
+    <nav>
+        || <a href = "#aboutMe">About Me</a>   ||
+          <a href = "#myContact">Contact</a>   ||
+          <a href = "#portfolio">Portfolio</a> ||
+    </nav>
+
+    <section id = "myContact">
+        <h2 class = "title">Contact</h2>
+        <p>
+            <strong>Email: </strong><a href="mailto:sophiadeanne0204@gmail.com">sophiadeanne0204@gmail.com</a>
+            <br>
+            <strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/sophia-deanne-robles-deydeannie0204/" target="_blank">linkedin.com/in/sophia-deanne-robles-deydeannie0204</a>
+        </p>
+
+    </section>
+    <br> <br> 
+    <nav>
+        || <a href = "#aboutMe">About Me</a>   ||
+          <a href = "#myContact">Contact</a>   ||
+          <a href = "#portfolio">Portfolio</a> ||
+    </nav>
+
+    <section id = "portfolio">
+        <h2 class = "title">Portfolio</h2>
+        <p>
+            Click the link to view my portfolio: &rarr;
+            <a href = "https://drive.google.com/drive/folders/1odIq_VLaLborOEH6FmFaiKGcOmYke-e-?usp=sharing" target="_blank"> Deanne's Portfolio</a>
+        </p>
+    </section>
+    
+    <br> <br> <br>
+
+
+</body>
+
+<footer>        
+    <p>&copy; 2024 Sophia Deanne M. Robles</p>
+</footer>
+<script src = "about me.js"></script>
+
+</html>

@@ -1,0 +1,123 @@
+#head{
+    margin: 0%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-family: Raleway;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #405D72;
+    color:white;
+}
+
+nav{
+    margin-top: 3%;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #758694;
+    text-align: justify;
+    color: white;
+    padding:15px;
+}
+
+nav a{
+    background-color: #758694;
+    font-size: medium;
+    color:white;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    font-family: Poppins;
+    font-weight: lighter;
+    text-indent: 1%;
+
+}
+nav a:hover{
+    background-color: black;
+    text-decoration:underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: white;
+}
+
+.title{
+    font-family: Raleway;
+    font-weight: bold;
+    background-color: white;
+}
+
+#aboutMe{
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 25px;
+    font-family: Poppins;
+    font-weight: 100;
+    font-size:small;
+    background-color: white;
+    
+}
+
+.viewButton{
+    background-color: #405D72;
+    font-size: medium;
+    font-family: Poppins;
+    font-weight: bold;
+    color:white;
+    height:45px;
+    width:150px;
+    border-radius: 15px;
+    border-color: transparent;
+    float: right;
+}
+
+.column{
+    background-color: white;
+}
+
+.column.left{
+    width: 75%;
+    float: left;
+}
+.column.right{
+    width: 25%;
+    float: right;
+}
+#myPhoto{
+    padding-left: 25px;
+    width: 225px;
+    height:330px;
+    float:right;
+}
+
+#myContact{
+    font-family: Poppins;
+    font-weight: 100;
+    font-size: small;
+    background-color: white;
+    padding: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#portfolio{
+    font-family: Poppins;
+    font-weight: 100;
+    font-size: small;
+    background-color: white;
+    padding: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+footer{
+    background-color: #405D72;
+    text-align: center;
+    color: white;
+    font-family: Poppins;
+    bottom:0;
+    padding:0.25rem 0;
+    width: 100%;
+    
+}
+
+body{
+    font-family: Raleway, Poppins;
+    text-align: justify;
+    background-color:#F7E7DC;
+}
