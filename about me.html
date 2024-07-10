@@ -1,86 +1,220 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>About Me</title>
+    <title>Sophia Deanne Robles</title>
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "about me.css"> <!--CSS File-->
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'> <!--Poppins font-->
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'> <!--Raleway font-->
 </head>
 
-<body>
-    <header><h1 id = "head">ABOUT ME: WEBSITE</h1></header>
-    <!--mas maganda kung may sidebar na lang sha-->
-    <nav>
-        || <a href = "#aboutMe">About Me</a>   ||
-          <a href = "#myContact">Contact</a>   ||
-          <a href = "#portfolio">Portfolio</a> ||
-    </nav>
+<body>     
+    <section>
+        <header id = "head">
+            <h1>SOPHIA DEANNE ROBLES</h1>
+            <hr class = "half-width">
+            <h2>Information Technology</h2>
+        </header>
+    </section>
 
-    <section id = "aboutMe">
-        <h2>About Me</h2>
-        <div class="column">
-            <p>
-                Hi, <strong>I'm Sophia Deanne M. Robles</strong>, a third-year student pursuing a <b><em>Bachelor of Science in Information Technology</em></b> at <b><i>Bulacan State University Main Campus</i></b>.
-                In two years, I learned several skills in the following fields: <br>
-                <ul>
-                    <li>Database Management in SQL.</li>
-                    <li>Programming Languages (Java and C++). </li>
-                    <li>UI/UX Designing.</li>
-                    <li>Animation</li>
-                    <li>Network Architecture</li>
-                </ul>
-            </p>
-        </div>
-        <button class = "viewButton" onclick = "showPhoto()">VIEW PHOTO</button> <br> <br>
+    <section> 
+        <span onclick = "toggleNav()"><img id = "menuIcon" src = "hamburger menu.png" title = "Click to toggle the menu bar."></img></span>
+    </section> 
+    
+    <section id = "mySidenav" class = "sidenav">
+        <ul>
+            <a href = "javascript:void(0)" class = "closeButton" onclick = "closeNav()">&times;</a>
+            <li><a href = "#aboutMe">About Me</a></li><br><br>
+            <li><a href = "#musician">A Life With Music</a></li> <br><br>
+            <li><a href = "#ourBusiness">Our Business</a></li><br><br>  
+            <li><a href = "#portfolio">Portfolio</a></li><br><br>   
+            <li><a href = "#myContact">Contact</a> </li><br><br>
+            <li><a href = "#values">Values</a></li><br><br>
+        </ul>
+    </section>
 
-        <!--Show Photo Event-->
-        <div class = "column">
-            <img id = "myPhoto" onclick = "showPhoto()" src = "sensitive content.jpg" alt = "an image showing a sensitive content"></img>
+    <div id = "main">
+
+        <div id = "aboutMe">
+            <table>
+                <tr>
+                    <td style = "width: 70%;"><h1 class = "title">ABOUT ME</h1>
+                        <hr class="subtitle">
+                        <p>
+                            Hi, my name is <strong>Sophia Deanne M. Robles</strong>. 
+                            I'm a third-year student pursuing a <b><em>Bachelor of Science in Information Technology</em></b> at <b><i>Bulacan State University Main Campus</i></b>.
+                            In two years, I learned several skills in the following fields: <br>
+                            <ul>
+                                <li>Database Management in SQL.</li>
+                                <li>Programming Languages (Java and C++). </li>
+                                <li>UI/UX Designing.</li>
+                                <li>Animation</li>                                    
+                                <li>Network Architecture</li>
+                            </ul>
+                            My interest in web development started in 2021; however, I have to relearn it all over again. 
+                        </p> <br>
+                        <button class = "viewButton" onclick = "showPhoto()">SHOW PHOTO</button> <br><br><br>
+                    </td>
+                    <td style = "width: 30%;">
+                        <section>    
+                            <!--Show Photo Event-->
+                            <img id = "myPhoto" onclick = "showPhoto()" src = "sensitive content.jpg" alt = "an image showing a duck" title = "Click to change photo."></img>
+                        </section>
+                    </td>
+                </tr>
+            </table>
+        </div> 
+        
+        <br> <br> <br>   
+
+        <div id = "musician"> 
+            <div>
+                <h1>A LIFE WITH MUSIC</h1>
+                <hr class = "subtitle"><br>
+            </div>
+            <!--Grid: Four Columns-->
+            <div class = "row">
+                <div class = "column">
+                    <img src = "guitarist 1 .jpg" alt = "Playing Guitar" style = "width:100%" onclick = "musicianFunction(this);">
+                </div>
+                <div class = "column">
+                    <img src = "keyboardist .JPG" alt = "Playing Keyboard" style = "width:100%"  onclick = "musicianFunction(this);">
+                </div>
+                <div class = "column">
+                    <img src = "bassist.jpg" alt = "Playing Bass" style = "width:100%" onclick = "musicianFunction(this);">
+                </div>
+                <div class = "column">
+                    <img src = "guitarist 2.jpg" alt = "Playing Guitar" style = "width:100%"  onclick = "musicianFunction(this);">
+                </div>
+            </div>
             
+            <div class = "musician-container">
+                <!--Close the image-->
+                <span onclick="this.parentElement.style.display='none'" class="closeButton">&times;</span>
+                <!--Expanded image-->
+                <img id = "expandedImg" style="width:100%">
+                <div id = "imgtext"></div>
+            </div>
         </div>
         
-    </section>
+        <br><br>
 
-    <br> <br> <br> 
-    <nav>
-        || <a href = "#aboutMe">About Me</a>   ||
-          <a href = "#myContact">Contact</a>   ||
-          <a href = "#portfolio">Portfolio</a> ||
-    </nav>
+        <div id = "ourBusiness">
+            <table>
+                <tr>
+                    <section class = "mockup-container"> <!--gallery container-->
+                        <a href = "https://www.raket.ph/pikit_digitals/products/animals-coloring-books" target="_blank">
+                            <img src = "Mockup coloring books.png" style = "width: 100%"></img>
+                        </a>
+                        <a href = "https://www.raket.ph/pikit_digitals/products/animals-coloring-books" target="_blank">
+                            <img src = "Mockup coloring book 2.png" style = "width: 100%"></img>
+                        </a>
+                        <a href = "https://www.raket.ph/pikit_digitals/products/busy-books-for-kids" target="_blank">
+                            <img src="Mockup busy books.png" style="width: 100%"></img> 
+                        </a>
+                        <a href = "https://www.raket.ph/pikit_digitals/products/busy-books-for-kids" target="_blank">
+                            <img src="Mockup busy books 2.png" style="width: 100%"></img> 
+                        </a>
+                        <a href = "https://www.raket.ph/pikit_digitals/products/word-search-bundle-edition" target="_blank">
+                            <img src = "Mockup word search.png" style="width: 100%"></img>
+                        </a>
+                        <a href = "https://www.raket.ph/pikit_digitals/products/word-search-bundle-edition" target="_blank">
+                            <img src = "Mockup word search 2.png" style="width: 100%"></img>
+                        </a>
+                    </section>
+                </tr>
+                <td>
+                    <h1 class = "title">OUR BUSINESS</h1>
+                    <hr class="subtitle">
+                    <h2>PIKIT DIGITALS:</h2>
+                    <p>
+                        At PiKit Digitals, we specialize in creating captivating digital content for various purposes. Our mission is to inspire creativity, educate, and engage individuals of all ages. <br>
+                        <h4>Here’s what we offer:</h4>
+                            <ul>
+                                <li><b>Activity Books:</b> From coloring pages and word searches to mazes and brain teasers, our books entertain and educate kids, students, and anyone seeking fun challenges.</li>
+                                <li><b>Powerful Presentations: </b></li>
+                                <li><b>Custom Graphic Design: </b>Have a unique goal? Let us bring it to life! From logos and social media banners to promotional materials, we’re here to make your brand stand out.</li>
+                            </ul>
+                        <h4>We also offer several services such as:</h4>
+                        <ol>
+                            <li>Audio to Text Transcription</li>
+                            <li>Data Entry</li>
+                            <li>Document Typing</li>
+                            <li>Excel/Sheet Entry and Organization</li>
+                        </ol>
+                    </p>
+                    <hr class="subtitle">
+                    <h2>Social Media Accounts:</h2>
+                    <p>
+                        <strong>Tiktok: </strong><a href="https://www.tiktok.com/@pikit_digitals_official?_t=8nsRlGX8p0v&_r=1" target="_blank">https://www.tiktok.com/@pikit_digitals_official</a><br>
+                        <strong>Instagram: </strong><a href="https://www.instagram.com/pikitdigitals/?utm_source=ig_web_button_share_sheet" target="_blank">https://www.instagram.com/pikitdigitals/</a><br>
+                        <strong>Gmail: </strong><a href="mailto:pikit.digitals@gmail.com" target="_blank">pikit.digitals@gmail.com</a><br>
+                        <strong>RaketPH: </strong><a href = "https://www.raket.ph/pikit_digitals" target="_blank">https://www.raket.ph/pikit_digitals</a><br>
+                    </p>
+                    <hr class="subtitle">
+                    <h2>Our Products:</h2>
+                    <ol>
+                        <li><strong>Animal Coloring Books Bundle: </strong><br><a href = "https://www.raket.ph/pikit_digitals/products/animals-coloring-books" target="_blank">https://www.raket.ph/pikit_digitals/products/animals-coloring-books</a></li>
+                        <li><strong>Busy Books for Kids Bundle: </strong><br><a href = "https://www.raket.ph/pikit_digitals/products/busy-books-for-kids" target="_blank">https://www.raket.ph/pikit_digitals/products/busy-books-for-kids</a></li>
+                        <li><strong>Word Search Bundle: </strong><br><a href = "https://www.raket.ph/pikit_digitals/products/word-search-bundle-edition" target="_blank">https://www.raket.ph/pikit_digitals/products/word-search-bundle-edition</a></li>
+                    </ol>
+                </td>  
+            </table>
+        </div>
+        
+        <br><br>
+        
+        <div id = "portfolio">
+            <table>
+                <tr>
+                    <td style = "width: 70%;">
+                        <a href = "" target="_blank" title = "Click to enter Deanne's Portfolio.">
+                            <img id = "portfolioImage" src = "Portfolio img.png"></img>
+                        </a>
+                    </td>
+                    <td style = "width: 100%;">
+                        <h1 class = "title">PORTFOLIO</h1>
+                        <hr class="subtitle">
+                        <p>
+                        Click the link to view my portfolio:<br> &darr; <br>
+                        <a href = "" target="_blank"> Deanne's Portfolio</a>
+                        </p> 
+                    </td>
+                </tr> <br><br>
+            </table>
+        </div>
+        
+        <br> <br>
 
-    <section id = "myContact">
-        <h2 class = "title">Contact</h2>
-        <p>
-            <strong>Email: </strong><a href="mailto:sophiadeanne0204@gmail.com">sophiadeanne0204@gmail.com</a>
-            <br>
-            <strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/sophia-deanne-robles-deydeannie0204/" target="_blank">linkedin.com/in/sophia-deanne-robles-deydeannie0204</a>
-        </p>
+        <div id = "myContact" class = "hero-image">
+            <img src = "contact img.jpg">
+            <section class = "hero-text">
+                <h1 style = "font-style: raleway;">CONTACT</h1>
+                <hr class="subtitle">
+                <h1>Sophia Deanne Robles</h1>
+                <p>
+                    <strong>Email: </strong><a href="">dinsoap@gmail.com</a> <br>
+                    <strong>LinkedIn: </strong><a href="" target="_blank">dinsoap</a> <br>
+                    <strong>GitHub: </strong><a href="https://github.com/Deannieee" target="_blank"> github.com/Deannieee</a>
+                </p>
+            </section>
+        </div> 
 
-    </section>
-    <br> <br> 
-    <nav>
-        || <a href = "#aboutMe">About Me</a>   ||
-          <a href = "#myContact">Contact</a>   ||
-          <a href = "#portfolio">Portfolio</a> ||
-    </nav>
+        <br><br>
+        
+        <div id = "values">
+            <h1 class = "title">Always remember that</h1>
+            <hr class = "subtitle">
+            <h2><em>&#8212; &#x275D; You are always capable of doing greater things.&#x275E;</em></h2>            
+        </div>
 
-    <section id = "portfolio">
-        <h2 class = "title">Portfolio</h2>
-        <p>
-            Click the link to view my portfolio: &rarr;
-            <a href = "https://drive.google.com/drive/folders/1odIq_VLaLborOEH6FmFaiKGcOmYke-e-?usp=sharing" target="_blank"> Deanne's Portfolio</a>
-        </p>
-    </section>
-    
-    <br> <br> <br>
-
-
+    </div>
 </body>
 
 <footer>        
     <p>&copy; 2024 Sophia Deanne M. Robles</p>
 </footer>
+
 <script src = "about me.js"></script>
 
 </html>
